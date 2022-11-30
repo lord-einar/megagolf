@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('gojeda_golf', 'teltrun', 'Calamuchita1983', {
-    host: 'http://db4free.net:3306',
+const sequelize = new Sequelize('ojeda_golf', 'teltrun', 'Calamuchita1983!', {
+    host: 'localhost',
     dialect: 'mysql' /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
   });
 

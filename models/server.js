@@ -28,7 +28,7 @@ class Server {
          this.app.use( express.json() )
 
          //Carpeta estatica
-         this.app.use(express.static, 'public');
+         this.app.use(express.static('public'));
 
     }
 
