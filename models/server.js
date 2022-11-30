@@ -27,6 +27,9 @@ class Server {
          //Lectura y parseo JSON
          this.app.use( express.json() )
 
+         //Carpeta estatica
+         this.app.use(express.static, 'public');
+
     }
 
 
