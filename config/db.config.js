@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('ojeda_golf', 'teltrun', 'Calamuchita1983!', {
+const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, process.env.PASS, {
     host: 'localhost',
-    dialect: 'mysql' /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
+    dialect: 'mysql'
   });
 
   const dbConnection = async() => {
